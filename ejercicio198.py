@@ -1,0 +1,23 @@
+// Proyecto de Informatica
+// Ejercicio 198
+Ejercicio 194: Matrix rotation 90° in-place (NxN)
+Análisis
+ Girar matriz cuadrada 90° (clockwise) sin matriz extra.
+Diseño
+ Transponer + reverse each row, o layer-by-layer swap.
+Código
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    int n; if(!(cin>>n)) return 0;
+    vector<vector<int>> a(n, vector<int>(n));
+    for(int i=0;i<n;++i) for(int j=0;j<n;++j) cin>>a[i][j];
+    // transpose
+    for(int i=0;i<n;++i) for(int j=i+1;j<n;++j) swap(a[i][j], a[j][i]);
+    // reverse rows
+    for(int i=0;i<n;++i) reverse(a[i].begin(), a[i].end());
+    for(int i=0;i<n;++i){ for(int j=0;j<n;++j) cout<<a[i][j]<<" "; cout<<"\n"; }
+}
+
+Prueba
+? 3x3 matrix rotated as expected.
