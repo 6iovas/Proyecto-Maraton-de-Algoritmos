@@ -7,7 +7,7 @@
 // ? Quick prune: degree sequences must match multiset.
 
 // ? Backtracking: assign mapping node-by-node, check partial adjacency consistency. Use ordering by degrees to reduce branching.
-
+ 
 // Código (C++)
 #include <bits/stdc++.h>
 using namespace std;
