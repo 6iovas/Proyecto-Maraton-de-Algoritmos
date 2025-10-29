@@ -1,14 +1,14 @@
 // Proyecto de Informatica
 // Ejercicio 260
-Ejercicio 33  Graph Isomorphism (naive backtracking + pruning for small n)
-Análisis
- Determinar si dos labelled graphs G1 and G2 (n ? 10-12) son isomorfos (exist permutation mapping adjacency). For small n backtracking with degree sequence pruning works.
-Diseño
-? Quick prune: degree sequences must match multiset.
+// Ejercicio 33  Graph Isomorphism (naive backtracking + pruning for small n)
+// Análisis
+// Determinar si dos labelled graphs G1 and G2 (n ? 10-12) son isomorfos (exist permutation mapping adjacency). For small n backtracking with degree sequence pruning works.
+// Diseño
+// ? Quick prune: degree sequences must match multiset.
 
-? Backtracking: assign mapping node-by-node, check partial adjacency consistency. Use ordering by degrees to reduce branching.
+// ? Backtracking: assign mapping node-by-node, check partial adjacency consistency. Use ordering by degrees to reduce branching.
 
-Código (C++)
+// Código (C++)
 #include <bits/stdc++.h>
 using namespace std;
 
